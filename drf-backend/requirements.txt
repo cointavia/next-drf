@@ -1,0 +1,13 @@
+Django==4.2           # Core Django framework
+djangorestframework==3.14.0  # Django Rest Framework for APIs
+gunicorn==20.1.0      # Production WSGI server
+django-cors-headers==3.13.0  # For handling CORS in APIs
+djangorestframework-simplejwt==5.2.2 # For JWT authentication
+python-decouple==3.8  # Manage environment variables securely
+boto3
+PyJWT
+django-mysql
+django-cors-headers
+mysqlclient
+
+ 

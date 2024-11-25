@@ -1,0 +1,29 @@
+{
+    "name": "next-drf",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "setup:backend": "cd drf-backend && pip install -r requirements.txt",
+        "migrate": "node scripts/migrate.mjs",
+        "startapp": "node scripts/startapp.mjs",
+        "dev": "node scripts/dev.mjs",
+        "dev:frontend": "npm run dev --prefix next-frontend",
+        "dev:backend": "cd drf-backend && env\\Scripts\\activate && python manage.py runserver",
+        "dev:makemigrations": "cd drf-backend && env\\Scripts\\activate && python manage.py makemigrations",
+        "dev:migrate": "cd drf-backend && env\\Scripts\\activate && python manage.py migrate",
+        "build": "npm run build:frontend && npm run build:backend",
+        "build:frontend": "npm run build --prefix next-frontend",
+        "build:backend": "cd drf-backend && python manage.py collectstatic --noinput",
+        "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+        "start:frontend": "npm run start --prefix next-frontend",
+        "start:backend": "cd drf-backend && gunicorn drfBackend.wsgi:application --bind 0.0.0.0:8000"
+    },
+    "dependencies": {
+        "chalk": "^5.3.0",
+        "concurrently": "^9.1.0",
+        "dotenv": "^16.4.5",
+        "jwt-decode": "^4.0.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.7.2"
+    }
+}
