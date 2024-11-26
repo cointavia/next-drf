@@ -1,6 +1,14 @@
 {
     "name": "next-drf",
     "version": "1.0.0",
+    "description": "A full-stack framework combining Next.js and Django Rest Framework.",
+    "main": "cli.js",
+    "bin": {
+        "next-drf": "./cli.js"
+    },
+    "author": "Cointavia",
+   "license": "MIT",
+   "keywords": ["nextjs", "django", "framework", "fullstack", "drf", "cli"],
     "type": "module",
     "scripts": {
         "setup:backend": "cd drf-backend && pip install -r requirements.txt",
@@ -22,6 +30,7 @@
         "chalk": "^5.3.0",
         "concurrently": "^9.1.0",
         "dotenv": "^16.4.5",
+        "inquirer": "^12.1.0",
         "jwt-decode": "^4.0.0",
         "ts-node": "^10.9.2",
         "typescript": "^5.7.2"

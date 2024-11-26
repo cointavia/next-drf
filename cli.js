@@ -22,7 +22,7 @@ async function createProject() {
 
   // Clone the template
   console.log(chalk.blue("\nCloning the Next-DRF template..."));
-  execSync(`git clone https://github.com/your-repo/next-drf.git ${projectName}`, {
+  execSync(`git clone https://github.com/cointavia/next-drf.git ${projectName}`, {
     stdio: "inherit",
   });
 
