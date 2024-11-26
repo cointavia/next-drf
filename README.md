@@ -40,8 +40,7 @@ Here’s the content formatted specifically for a `README.md` file:
 
 ```bash
 # Clone the repository
-git clone https://github.com/Cointavia/next-drf.git
-cd next-drf
+npx next-drf@latest
 
 # Install dependencies
 npm install
